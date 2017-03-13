@@ -1,9 +1,0 @@
-2017/03/06-17:27:50.505 1074 Reusing MANIFEST /home/drh/.config/chromium/Default/IndexedDB/https_www.chromeactions.com_0.indexeddb.leveldb/MANIFEST-000001
-2017/03/06-17:27:51.857 1074 Current memtable full; waiting...
-2017/03/06-17:27:51.866 2310 Level-0 table #5: started
-2017/03/06-17:27:51.876 2310 Level-0 table #5: 383 bytes OK
-2017/03/06-17:27:51.877 2310 Delete type=0 #3
-2017/03/06-17:27:51.877 2310 Level-0 table #7: started
-2017/03/06-17:27:51.877 2310 Level-0 table #7: 0 bytes OK
-2017/03/06-17:27:51.878 2310 Delete type=0 #4
-2017/03/06-17:27:51.878 2310 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
