@@ -1,0 +1,18 @@
+{
+   "api_console_project_id": "848880325531",
+   "app": {
+      "launch": {
+         "web_url": "http://javascript.editey.com"
+      }
+   },
+   "container": "GOOGLE_DRIVE",
+   "description": "JavaScript Editor for Google Drive",
+   "icons": {
+      "128": "128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3GPcihTIVKBqvFoB4bDSHg7gcR17Sf4nLrjlCp9JrUUnXoE8gYL3JX8kDmoDbWiJFj+OT1vG2WoVxX8LcFuf6kQBLiKte1w6eCrB4ULeyDLAeoL6f1BNgpiRv5u4dO1Yqb3NqKcf8yU466eLX64lFB0v0da0VX1j2VmMnIZ3pVwIDAQAB",
+   "manifest_version": 2,
+   "name": "JavaScript Editey",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.37"
+}

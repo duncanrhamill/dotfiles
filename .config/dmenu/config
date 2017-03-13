@@ -1,0 +1,2 @@
+#!/bin/bash
+dmenu_run -fn 'Hack 12' -h 60 -w 1520 -x 200 -y 510 -p ">"

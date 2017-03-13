@@ -1,0 +1,1 @@
+!function(){"use strict";chrome.runtime.onMessage.addListener(function(o,t){if("show_page_action"===o.action){var e="images/popup/icon";o.turnedOff===!0&&(e+="_disabled"),chrome.browserAction.setIcon({tabId:t.tab.id,path:{19:e+"-19.png",38:e+"-38.png"}}),chrome.browserAction.setPopup({tabId:t.tab.id,popup:"popup.html#"+o.websiteId}),chrome.browserAction.show(t.tab.id)}})}();

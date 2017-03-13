@@ -1,0 +1,49 @@
+#!/bin/bash
+
+workspaces() {
+    i3msg=$(i3-msg -t get_workspaces)
+    echo -e " $(python3 $HOME/.config/lemonbar/ws.py $i3msg)"
+}
+
+root() {
+    avail=$(df -h / --output=avail | tail -n 1)
+
+    echo -e " \uf0a0 ${avail//[[:blank:]]/} "
+}
+
+usr() {
+    avail=$(df -h /home --output=avail | tail -n 1)
+
+    echo -e " \uf2c0 ${avail//[[:blank:]]/} "
+}
+
+ram() {
+    mram=$(free -b | awk 'NR==2{printf "%.2f%%", $3 / $2 * 100}')
+    ramv=$(free -b | awk 'NR==2{printf "%d", $3 / $2 * 100}')
+    if [[ ${ramv} -gt 80 ]];then
+        echo -e "%{B#B71C1C} \uf233 ${mram} %{B#1E1E1E}"
+    elif [[ ${ramv} -lt 20 ]];then
+        echo -e "%{B#1B5E20} \uf233 ${mram} %{B#1E1E1E}"
+    else
+        echo -e " \uf233 ${mram} "
+    fi
+}
+
+clock() {
+    echo " %{F#FFFFFF}$(date +%H:%M:%S) "
+}
+
+net() {
+    wifi="\uf1eb"
+
+    if ping -c 1 google.com >> /dev/null 2>&1; then
+        echo -e "%{B#1B5E20} ${wifi} %{B#1E1E1E}"
+    else
+        echo -e "%{B#B71C1C} ${wifi} %{B#1E1E1E}"
+    fi
+}
+
+while true; do
+    echo "%{l}$(workspaces)%{c}$(root)$(usr)$(ram)$(net)%{r}$(clock)"
+    sleep 1
+done

@@ -1,0 +1,19 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://app.mystudylife.com/"
+      },
+      "urls": [ "*://app.mystudylife.com/" ]
+   },
+   "description": "A free online planner for students, teachers and lecturers designed to make your study life easier to manage.",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDRBNVlzRKqchPdiBYr9+EyC5iAmC14eIv1rQKVAPsq9YEpoRXokciyOcHSTWa2qkPRompmMVIn2AFfJ1TEPawNYsy+ek1h1IzJUmlLi0VcYbID7xv6IJ96WFw+JyQwfR00oECRomj4kuOX02Yo6mib1yuTjAn48o5qVhmRg0ncAwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "12",
+   "name": "My Study Life",
+   "permissions": [ "unlimitedStorage", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "5.1.0"
+}

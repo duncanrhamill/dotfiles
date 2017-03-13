@@ -1,0 +1,24 @@
+{
+   "app": {
+      "launch": {
+         "container": "tab",
+         "urls": [ "https://developers.google.com/events/io/input-output/" ],
+         "web_url": "https://developers.google.com/events/io/input-output/"
+      }
+   },
+   "description": "Create your own machine in our latest Chrome Experiment.",
+   "icons": {
+      "128": "io-icon.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKX1dKQXKu1vIE3aJHrDpSFqKe/YuZ7I+7HV7VfxqXloLOVxVsOSTlyN6zcBGk/yaF/Su03Y/ywbeoBxc3+FyBo81WWu2ACx0rxeCOus597RONWUvQIW7p3A7YApqhA51n2dA5VYffXvQ4lgveY/XVgpDycoSZVtdGtmek96a1TQIDAQAB",
+   "name": "Google I/O: input/output",
+   "offline_enabled": false,
+   "permissions": [  ],
+   "requirements": {
+      "3D": {
+         "features": [  ]
+      }
+   },
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.3.3.7"
+}

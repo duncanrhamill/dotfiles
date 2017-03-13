@@ -1,0 +1,6 @@
+#!/bin/bash
+xrandr --newmode "1920x1080_59.90" 172.51 1920 2040 2248 2576  1080 1081 1084 1118 -HSync +Vsync
+xrandr --addmode Virtual1 1920x1080_59.90
+xrandr --size 1920x1080_59.90
+
+feh --bg-scale /home/drh/Desktop/wallpaper.jpg
